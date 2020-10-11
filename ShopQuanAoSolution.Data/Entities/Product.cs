@@ -1,17 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ShopQuanAoSolution.Data.Entities
 {
-    public partial class Product
+    public class Product
     {
         public int ID { get; set; }
         public int catid { get; set; }
         public string name { get; set; }
         public string slug { get; set; }
         public string img { get; set; }
-        public string detail { get; set; }
+        public string description { get; set; }
         public int sold { get; set; }
         public int number { get; set; }
         public double price { get; set; }

@@ -9,10 +9,9 @@ namespace ShopQuanAoSolution.Data.EF
 {
     public class ShopQuanAoDbContex : DbContext
     {
-        ShopQuanAoDbContex(DbContextOptions options):base(options) { 
+        public ShopQuanAoDbContex(DbContextOptions options):base(options) { 
         
         }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new ProductConfiguration());
